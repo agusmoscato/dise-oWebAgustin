@@ -1,0 +1,44 @@
+footer{
+    height: fit-content;
+    background-color: #ffbd59;
+    background-attachment: fixed;
+    color: white;
+
+    section{
+        background-color: #00000033;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    div{
+
+        .footer__title{
+            font-size: 25px;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 5px;
+            text-transform: uppercase;
+
+        }
+
+        p, li, a{
+            margin-top: 0;
+            font-size: 15px;
+            color: #f8f9fa;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            
+        }
+        li:hover{
+            color: #f8f9fa;
+            transform: scale(1.1);
+            transition: all 0.3s;
+            a:hover{
+                color: white;
+            }
+        }
+    }
+}
