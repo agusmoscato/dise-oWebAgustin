@@ -96,7 +96,7 @@ main{
             .puntos {
                 box-shadow: #0000001a 0px 4px 6px -1px, #0000000f 0px 2px 4px -1px;
                 padding: 20px;
-                width: fit-content;
+                width: 300px;
                 align-items: center;
                 display: flex;
                 flex-direction: column;
@@ -117,7 +117,7 @@ main{
                 }
 
                 p {
-                    font-size: 30px;
+                    color: gray;
                 }
 
                 li {
@@ -163,10 +163,10 @@ main{
             align-items: center;
             background-color: #ffbd59bf;
             padding: 15px;
-            border-radius: 50px;
             color: white;
             box-shadow: #26394d 0px 20px 30px -10px;
             margin: 20px;
+            border: 1px solid #dee2e6;
 
             span {
                 font-size: 1rem;
@@ -185,6 +185,7 @@ main{
                 padding: 10px;
                 box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
                 margin: 20px;
+                background-color: white;
 
                 .circulo {
                     width: fit-content;
