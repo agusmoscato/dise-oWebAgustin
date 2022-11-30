@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agustin Moscato</title>
+    <link rel="icon" type="image/x-icon" href="../css/img/Logo.png">
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -37,7 +38,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link nav__item" href="../index.html">Inicio</a>
-                            <a class="nav-link nav__item" href="../index.html/#sobreMi">Sobre Mi</a>
+                            <a class="nav-link nav__item" href="../index.html#sobreMi">Sobre Mi</a>
                             <a class="nav-link nav__item" href="./paquetes.html">Paquetes</a>
                             <a class="nav-link nav__item active-custom" href="#">Contacto</a>
                         </div>
@@ -54,29 +55,30 @@
             <h2 class="title">Contacto</h2>
             
 
-                <form action="" class="form">
+                <form onsubmit="sendEmail(); reset(); return(false);" class="form">
+                
                     <div class="input">
                         <label for="name">Nombre:</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                     </div>
                     <div class="input">
                         <label for="surname">Apellido:</label>
-                        <input type="text" name="surname">
+                        <input type="text" name="surname" required>
                     </div>
                     <div class="input">
                         <label for="email">Email:</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </div>
                     <div class="input">
                         <label for="diseño">Tipo de web: </label>
-                    <select name="diseño">
+                    <select name="diseño" required>
                         <option selected disabled>Seleccionar una</option>
                         <option value="eco">Económica</option>
                         <option value="basic">Basica</option>
                         <option value="tienda">Tienda Online</option>
                     </select>
                     </div>
-                    <button class="btn">Enviar</button>
+                    <button type="submit" class="btn">Enviar</button>
                 </form>
 
             
@@ -86,7 +88,7 @@
 
 
         <div id="whatsapp">
-            <a href=""><img src="https://www.unipile.com/wp-content/uploads/2022/02/icone-logo-whatsapp-vert.png"></a>
+            <a href="https://wa.me/5492325519855?text=Hola,%20estoy%20interesado%20en%20tu%20propuesta%20de%20diseño%20web"><img src="https://www.unipile.com/wp-content/uploads/2022/02/icone-logo-whatsapp-vert.png"></a>
         </div>
     </main>
 
@@ -118,6 +120,23 @@
     </footer>
 
 
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "agustinmoscato369@gmail.com",
+                Password : "@ubain149",
+                To : 'agustinmoscato123@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

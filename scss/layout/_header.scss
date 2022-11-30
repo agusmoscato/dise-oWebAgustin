@@ -14,18 +14,15 @@ header {
 
         .nav__item {
             font-size: 16px;
-            margin: 20px;
+            margin: 5px;
             color: white;
             background-color: #FFBD59;
             border-radius: 50px;
+            padding: 5px;
         }
 
         .active-custom {
-            font-size: 16px;
-            margin: 20px;
-            color: white;
             background-color: #f8990a;
-            border-radius: 50px;
 
         }
 
@@ -38,6 +35,10 @@ header {
 
         .nav--custom {
             text-align: center;
+
+            .navbar-nav {
+                flex-direction: row;
+            }
         }
 
     }

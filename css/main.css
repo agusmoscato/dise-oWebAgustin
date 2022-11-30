@@ -45,7 +45,7 @@ main {
   justify-content: center;
   color: black;
   border-radius: 30px;
-  margin: 50px;
+  margin: 50px 20px;
   box-shadow: #ffc10766 0px 5px, #ffc1074d 0px 10px, #ffc10733 0px 15px, #ffc1071a 0px 20px, #ffc1070d 0px 25px;
   border: 2px solid #ffc107;
   height: 420px; }
@@ -100,21 +100,20 @@ header .navbar {
     width: 100px; }
   header .navbar .nav__item {
     font-size: 16px;
-    margin: 20px;
+    margin: 5px;
     color: white;
     background-color: #FFBD59;
-    border-radius: 50px; }
+    border-radius: 50px;
+    padding: 5px; }
   header .navbar .active-custom {
-    font-size: 16px;
-    margin: 20px;
-    color: white;
-    background-color: #f8990a;
-    border-radius: 50px; }
+    background-color: #f8990a; }
   header .navbar .navbar-toggler {
     color: white;
     border: 0; }
   header .navbar .nav--custom {
     text-align: center; }
+    header .navbar .nav--custom .navbar-nav {
+      flex-direction: row; }
 
 header .navbar > .container,
 header .navbar > .container-fluid,
@@ -141,7 +140,7 @@ header .navbar > .container-xxl {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     justify-content: center; }
     #home .home__banner .home__title {
       font-size: 80px;
@@ -305,13 +304,13 @@ main {
         #paquetes--page .extra-servicios .caracteristicas .puntos li {
           font-size: 25px; }
 
-.dw-economico {
+#dw-economico, #dw-basico, #dw-tienda {
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 100px 0; }
-  .dw-economico .title {
+  #dw-economico .title, #dw-basico .title, #dw-tienda .title {
     font-size: 35px;
     color: black;
     padding: 10px 50px;
@@ -321,12 +320,12 @@ main {
     background-color: wheat;
     filter: drop-shadow(2px 4px 6px black);
     max-width: fit-content; }
-  .dw-economico .servicios {
+  #dw-economico .servicios, #dw-basico .servicios, #dw-tienda .servicios {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
-    .dw-economico .servicios .mp-card {
+    #dw-economico .servicios .mp-card, #dw-basico .servicios .mp-card, #dw-tienda .servicios .mp-card {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -336,11 +335,11 @@ main {
       box-shadow: #26394d 0px 20px 30px -10px;
       margin: 20px;
       border: 1px solid #dee2e6; }
-      .dw-economico .servicios .mp-card span {
+      #dw-economico .servicios .mp-card span, #dw-basico .servicios .mp-card span, #dw-tienda .servicios .mp-card span {
         font-size: 1rem; }
-      .dw-economico .servicios .mp-card img {
+      #dw-economico .servicios .mp-card img, #dw-basico .servicios .mp-card img, #dw-tienda .servicios .mp-card img {
         width: 150px; }
-    .dw-economico .servicios .caracteristicas .puntos {
+    #dw-economico .servicios .caracteristicas .puntos, #dw-basico .servicios .caracteristicas .puntos, #dw-tienda .servicios .caracteristicas .puntos {
       display: flex;
       align-items: center;
       border: 1px solid #dee2e6;
@@ -349,7 +348,7 @@ main {
       margin: 20px;
       background-color: white;
       justify-content: center; }
-      .dw-economico .servicios .caracteristicas .puntos .circulo {
+      #dw-economico .servicios .caracteristicas .puntos .circulo, #dw-basico .servicios .caracteristicas .puntos .circulo, #dw-tienda .servicios .caracteristicas .puntos .circulo {
         width: fit-content;
         background-color: #ffbd59bf;
         height: fit-content;
@@ -357,16 +356,16 @@ main {
         border-radius: 100%;
         margin-right: 20px;
         box-shadow: 0px 10px 10px #00000080; }
-      .dw-economico .servicios .caracteristicas .puntos p {
+      #dw-economico .servicios .caracteristicas .puntos p, #dw-basico .servicios .caracteristicas .puntos p, #dw-tienda .servicios .caracteristicas .puntos p {
         font-size: 30px; }
-      .dw-economico .servicios .caracteristicas .puntos li {
+      #dw-economico .servicios .caracteristicas .puntos li, #dw-basico .servicios .caracteristicas .puntos li, #dw-tienda .servicios .caracteristicas .puntos li {
         font-size: 25px; }
-        .dw-economico .servicios .caracteristicas .puntos li ul {
+        #dw-economico .servicios .caracteristicas .puntos li ul, #dw-basico .servicios .caracteristicas .puntos li ul, #dw-tienda .servicios .caracteristicas .puntos li ul {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: row-reverse; }
-          .dw-economico .servicios .caracteristicas .puntos li ul span {
+          #dw-economico .servicios .caracteristicas .puntos li ul span, #dw-basico .servicios .caracteristicas .puntos li ul span, #dw-tienda .servicios .caracteristicas .puntos li ul span {
             margin: auto; }
 
 /*Home Contacto*/
