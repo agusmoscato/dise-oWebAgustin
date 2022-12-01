@@ -298,7 +298,8 @@ main {
           margin-bottom: 10px;
           display: flex;
           align-items: center;
-          justify-content: center; }
+          justify-content: center;
+          font-size: 50px; }
         #paquetes--page .extra-servicios .caracteristicas .puntos p {
           color: gray; }
         #paquetes--page .extra-servicios .caracteristicas .puntos li {
