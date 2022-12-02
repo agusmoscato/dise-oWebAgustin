@@ -9,7 +9,12 @@
     <link rel="icon" type="image/x-icon" href="./css/img/Logo.png">
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/93e5081699.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -33,7 +38,7 @@
                             <a class="nav-link nav__item active-custom" href="#">Inicio</a>
                             <a class="nav-link nav__item" href="#sobreMi">Sobre Mi</a>
                             <a class="nav-link nav__item" href="./pages/paquetes.html">Paquetes</a>
-                            <a class="nav-link nav__item" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link nav__item" href="./pages/contact.html">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +54,7 @@
                 <h1 class="home__title">DISEÑO WEB</h1>
                 <p class="home__p">¿Necesitás un sitio web?
                     ¡Podemos ayudarte!</p>
-                    <a href="#paquetes"><button href="#paquetes" class="btn">Conoce nuestros servicios.</button></a>
+                <a href="#paquetes"><button href="#paquetes" class="btn">Conoce nuestros servicios.</button></a>
             </div>
         </section>
 
@@ -58,16 +63,19 @@
             <h2 class="title">Sobre mi</h2>
 
             <div class="info">
-                <h4 class="sm_title">Agustin Moscato<img src="./css/img/sobreMi/xd.webp" alt=""></h4>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis eveniet at iure quaerat inventore exercitationem odit, numquam amet, voluptates atque assumenda! Magnam, rerum quia dignissimos praesentium nihil similique velit.</p>
-            
+                <h4 class="sm_title">Agustin Moscato <a href="https://www.linkedin.com/in/agustin-moscato-8828a6226/"><i
+                            class="fa-brands fa-linkedin"></i></a></h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis eveniet at iure quaerat
+                    inventore exercitationem odit, numquam amet, voluptates atque assumenda! Magnam, rerum quia
+                    dignissimos praesentium nihil similique velit.</p>
+
             </div>
             <div>
                 <h2 class="sm_title">Algunos de mis trabajos:</h2>
-                <a href="https://raicesdecacao.com.ar"><img src="./css/img/sobreMi/raices.png" alt="" class="tec_img"></a>
+                <a href="https://raicesdecacao.com.ar"><img src="./css/img/sobreMi/raices.png" alt=""
+                        class="tec_img"></a>
                 <a href=""><img src="./css/img/sobreMi/andres.png" alt="" class="tec_img"></a>
-                <img src="./css/img/sobreMi/sass.png" alt="" class="tec_img">
             </div>
 
         </section>
@@ -93,81 +101,102 @@
                     <p class="card__p">Diseño web ecommerce: Vendé online las 24hs del día</p>
                     <button class="btn" disabled>Proximamente</button>
                 </div>
-                
+
             </div>
             <a href="./pages/paquetes.html">
-            <button class="btn">Ver precios</button></a>
+                <button class="btn">Ver precios</button></a>
         </section>
 
         <section id="contacto">
 
             <h2 class="title">Contacto</h2>
-            
 
-                <form action="" class="form">
-                    <div class="input">
-                        <label for="name">Nombre:</label>
-                        <input type="text" name="name">
-                    </div>
-                    <div class="input">
-                        <label for="surname">Apellido:</label>
-                        <input type="text" name="surname">
-                    </div>
-                    <div class="input">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email">
-                    </div>
-                    <div class="input">
-                        <label for="diseño">Tipo de web: </label>
-                    <select name="diseño">
+
+            <form method="post" class="form" id="form">
+
+                <div class="input">
+                    <label for="name">Nombre y apellido:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input">
+                    <label for="celular">Celular:</label>
+                    <input type="number" name="celular" id="celular" required>
+                </div>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input">
+                    <label for="disenio">Tipo de web: </label>
+                    <select name="disenio" id="disenio" required>
                         <option selected disabled>Seleccionar una</option>
-                        <option value="eco">Económica</option>
-                        <option value="basic">Basica</option>
+                        <option value="economica">Económica</option>
+                        <option value="basica">Basica</option>
                         <option value="tienda">Tienda Online</option>
                     </select>
-                    </div>
-                    <button class="btn">Enviar</button>
-                </form>
+                </div>
+                <button type="submit" class="btn" id="enviarCorreo">Enviar</button>
+            </form>
 
-            
+
         </section>
 
 
         <div id="whatsapp">
-            <a href="https://wa.me/5492325519855?text=Hola,%20estoy%20interesado%20en%20tu%20propuesta%20de%20diseño%20web"><img src="https://www.unipile.com/wp-content/uploads/2022/02/icone-logo-whatsapp-vert.png"></a>
+            <a
+                href="https://wa.me/5492325519855?text=Hola,%20estoy%20interesado%20en%20tu%20propuesta%20de%20diseño%20web"><img
+                    src="https://www.unipile.com/wp-content/uploads/2022/02/icone-logo-whatsapp-vert.png"></a>
         </div>
     </main>
 
 
     <footer>
-            <section>
-                
-                <div>
-                    <h4 class="footer__title">Links</h4>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Paquetes</a></li>
-                        <li><a href="">Sobre mi</a></li>
-                        <li><a href="">Contacto</a></li>
-                    </ul>
-                </div>
+        <section>
 
-                <div>
-                    <h4 class="footer__title">Agustin Moscato</h4>
-                    <p>Freelancer, diseño web</p>
-                </div>
+            <div>
+                <h4 class="footer__title">Links</h4>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Paquetes</a></li>
+                    <li><a href="">Sobre mi</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
 
-                <div>
-                    <h4 class="footer__title">Contactanos</h4>
-                    <p>Podes hacerlo via WhatsApp, haciendo click en el boton!</p>
-    
-                </div>
-            </section>
+            <div>
+                <h4 class="footer__title">Agustin Moscato</h4>
+                <p>Freelancer, diseño web</p>
+            </div>
+
+            <div>
+                <h4 class="footer__title">Contactanos</h4>
+                <p>Podes hacerlo via WhatsApp, haciendo click en el boton!</p>
+
+            </div>
+        </section>
     </footer>
 
 
+
+    <script>
+
+        const btnEnvio = document.getElementById("enviarCorreo");
+
+        btnEnvio.addEventListener("click", function (e) {
+            e.preventDefault();
+            const nombre = document.getElementById("name").value;
+            const celular = document.getElementById(`celular`).value;
+            const email = document.getElementById(`email`).value;
+            const disenio = document.getElementById(`disenio`).value;
+
+            window.location.href = `mailto:agustinmoscato369@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A%20${nombre}%0ACelular%3A%20${celular}%0AEmail%3A%20${email}%0ADise%C3%B1o%3A%20${disenio}`;
+        });
+
+    </script>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
