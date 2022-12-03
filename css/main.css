@@ -442,6 +442,9 @@ footer {
     text-align: center;
     padding: 5px;
     text-transform: uppercase; }
+  footer div ul {
+    display: flex;
+    justify-content: space-evenly; }
   footer div p, footer div li, footer div a {
     margin-top: 0;
     font-size: 15px;
@@ -449,6 +452,8 @@ footer {
     text-align: center;
     text-decoration: none;
     transition: all 0.3s; }
+    footer div p i, footer div li i, footer div a i {
+      font-size: 30px; }
   footer div li:hover {
     color: #f8f9fa;
     transform: scale(1.1);
