@@ -23,6 +23,11 @@ footer{
 
         }
 
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
         p, li, a{
             margin-top: 0;
             font-size: 15px;
@@ -30,7 +35,9 @@ footer{
             text-align: center;
             text-decoration: none;
             transition: all 0.3s;
-            
+            i{
+                font-size: 30px;
+            }
         }
         li:hover{
             color: #f8f9fa;
@@ -40,5 +47,6 @@ footer{
                 color: white;
             }
         }
+
     }
 }
