@@ -3,13 +3,12 @@ header {
         background-color: wheat;
         padding: 0;
         border-radius: 0 0 50px 50px;
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 10;
 
         .header__logo {
             width: 100px;
-
         }
 
         .nav__item {
@@ -23,7 +22,6 @@ header {
 
         .active-custom {
             background-color: #f8990a;
-
         }
 
 

@@ -93,7 +93,7 @@ header .navbar {
   background-color: wheat;
   padding: 0;
   border-radius: 0 0 50px 50px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 10; }
   header .navbar .header__logo {
@@ -147,6 +147,9 @@ header .navbar > .container-xxl {
       color: #ffffff;
       text-shadow: -5px 5px 0px #FFBD59;
       text-align: center; }
+    @media (max-width: 425px) {
+      #home .home__banner .home__title {
+        font-size: 50px; } }
     #home .home__banner .home__p {
       font-size: 40px;
       color: #ffffff;
